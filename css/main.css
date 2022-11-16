@@ -1,6 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 62%;
 }
 
 .container {
@@ -8,4 +18,22 @@
   max-width: 121.6rem;
   padding: 0 1.5rem;
   margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+  color: #5F3CA1;
+  height: 5.4rem;
+  line-height: 5.4rem;
+  background-color: #FFBF00;
+  border-radius: 0.6rem;
+  padding: 0px 5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+a:hover {
+  background-color: #5F3CA1;
+  color: #FFBF00;
 }/*# sourceMappingURL=main.css.map */
