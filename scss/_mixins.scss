@@ -4,20 +4,21 @@
     }
 }
 
-@mixin a($height, $bg, $colorText ){
+@mixin flex ($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin style-btn ($height, $bg, $colorText){
     display: inline-block;
-    color: $colorText ;
+    padding: 0 5rem;
     height: $height;
-    line-height: $height;
+    border-radius:6px;
     background-color: $bg;
-    border-radius: 0.6rem;
-    padding: 0px 5rem;
+    color: $colorText;
+    font-weight: bold ;
     font-size: 1.6rem;
-    font-weight: bold;
     cursor: pointer;
-    transition: all .3s;
-    &:hover{
-        background-color: $colorText;
-        color:$bg;
-    }
 }
